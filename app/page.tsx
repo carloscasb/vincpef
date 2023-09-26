@@ -5,9 +5,18 @@ export default function Home() {
 
 
     <div className=" bg-slate-500   flow-root h-screen items-center justify-center   ">
-    <div className=" bg-orange-500 flex-col w-1/2 items-center justify-center text-center px-4 py-3 mx-72 ">
-      <h2>Home</h2>
-    </div>
+  
+    
+      <div className=" px-52  py-7">
+        <Image
+          src="/logoHDC.svg"
+          width= {500}
+          height={500}
+          alt="Picture of the author"
+
+        />
+      </div>
+
     </div>
 
 

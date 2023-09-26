@@ -17,9 +17,9 @@ interface MenuLateral {
 
             <div className="p-5">
                 <Image
-                    src="/logo.svg"
-                    width={50}
-                    height={50}
+                    src="/logoHDC.svg"
+                    width={40}
+                    height={40}
                     alt="Picture of the author"
                                      
                 />

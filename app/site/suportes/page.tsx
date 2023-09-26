@@ -14,32 +14,32 @@ export default function Suporte() {
 
        <div className="grid gap-4 grid-cols-2">
           <div> <button type="button" onClick={() => router.push('/')} className="btn btn-primary
- m-2 w-40 ">
+  w-40 ">
             Home
           </button></div>
 
           <div> <button type="button" onClick={() => router.push('/site/organs')} className="btn btn-primary
- m-2 w-40 ">
+  w-40 ">
             Organização
           </button></div>
 
           <div> <button type="button" onClick={() => router.push('/site/sistemas')} className="btn btn-primary
- m-2 w-40 ">
+  w-40 ">
             Sistema
           </button></div>
 
           <div> <button type="button" onClick={() => router.push('/site/faccs')} className="btn btn-primary
- m-2 w-40 ">
+  w-40 ">
             Faccs
           </button></div>
 
           <div> <button type="button" onClick={() => router.push('/site/usuarios')} className="btn btn-primary
- m-2 w-40 ">
+  w-40 ">
             Usuários
           </button></div>
 
           <div> <button type="button" onClick={() => router.push('/site/nivels')} className="btn btn-primary
- m-2 w-40 ">
+  w-40 ">
             Niveis
           </button></div>
 

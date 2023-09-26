@@ -9,7 +9,7 @@ export default function Navbar(){
 
             <div>
                 <Image
-                    src="/logoHDC.svg"
+                    src="/vercel.svg"
                     width={150}
                     height={100}
                     alt="Picture of the author"
