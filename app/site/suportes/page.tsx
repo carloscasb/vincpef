@@ -23,7 +23,7 @@ export default function Suporte() {
             Organização
           </button></div>
 
-          <div> <button type="button" onClick={() => router.push('/site/sistemas')} className="btn btn-primary
+          <div> <button type="button" onClick={() => router.push('/site/sistemas/cars')} className="btn btn-primary
   w-40 ">
             Sistema
           </button></div>
