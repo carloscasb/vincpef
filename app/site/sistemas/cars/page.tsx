@@ -1,26 +1,27 @@
+import AddCar from "./addCar";
 
 
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
-
+//FAZ A BUSCA NO BANCO DE DADOS NA TABELA Car
 const getCars = async () => {
     const res = await prisma.car.findMany({
       select: {
         id: true,
         name: true,
   
-      },
+      }
     });
     return res;
-  };
+  }
 
 
  export default async function Cars(){
+// INSTANCEI NA VARIAVEL cars A BUSCA
+    const Cars = await getCars();
 
-  //  const cars = await getCars();
-
-    //console.log(cars)
+    //console.log(Cars)  MOSTRA UM ARRAW VAZIA POIS NÂO TEM ITEM
 
 
     return (
@@ -30,23 +31,25 @@ const getCars = async () => {
         <div className=" bg-white">
 
             
-        <div className="mb-2">
-                
+        <div className="mb-2" /*2 QUANDO CRIAR A FUNÇÃO AddCar (bottun)*/>
+                <AddCar/>
             </div>
             <table className=" table w-full">
                 <thead>
                     <tr>
                         <th>#</th>
                         <th>Nome</th>
-                        <th>Ação</th>
+                        <th className=" text-center">Ação</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                  {Cars.map((car, index) => (
+                    <tr key={car.id}>
+                        <td>{index + 1}</td>
+                        <td>{car.name}</td>
+                        <td ></td>
                     </tr>
+                    ))}
                 </tbody>
             </table>
 
