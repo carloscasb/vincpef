@@ -1,3 +1,4 @@
+/** 
 import { PrismaClient } from '@prisma/client';
 
 let prisma
@@ -12,3 +13,12 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 export default prisma;
+*/
+
+const Liberal = ()=>{
+  return(
+    <h2>oi</h2>
+  )
+}
+
+export default Liberal
