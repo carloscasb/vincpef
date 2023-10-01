@@ -35,7 +35,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "prisma/lib/prisma.tsx", "app/site/api/cars/route.ts", "prisma/lib/prisma.ts"  ],
+, "prisma/lib/prisma.tsx", "app/site/api/cars/route.ts", "prisma/lib/prisma.ts", "lib/prisma.js"  ],
   "exclude": [
     "node_modules"
   ]
