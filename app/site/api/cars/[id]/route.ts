@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import {  PrismaClient } from "@prisma/client";
 //2 IMPORTAR TABELA (tipo) Car
 import type { Car } from "@prisma/client";
-import { GiBodyBalance } from "react-icons/gi";
-import { Query } from "@vercel/postgres";
+//import { GiBodyBalance } from "react-icons/gi";
+//import { Query } from "@vercel/postgres";
 //1 CRIA UMA NOVA ESTANCIA DO PRisma
 const prisma = new PrismaClient();
 
