@@ -2,6 +2,7 @@ import AddCar from "./addCar";
 import Deletecar from "./deleteCar";
 
 import { PrismaClient } from '@prisma/client'
+import Updatecar from "./updateCar";
 const prisma = new PrismaClient()
 
 //FAZ A BUSCA NO BANCO DE DADOS NA TABELA Car
@@ -46,7 +47,11 @@ const getCars = async () => {
                     <tr key={car.id}>
                         <td>{index + 1}</td>
                         <td>{car.name}</td>
-                        <td> <Deletecar car={car} /> </td>
+
+                        <td className="flex justify-center space-x-1">
+                           <Updatecar car={car} />
+                           <Deletecar car={car} />
+                              </td>
                     </tr>
                     ))}
                 </tbody>
