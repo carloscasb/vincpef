@@ -1,5 +1,5 @@
 import AddCar from "./addCar";
-
+import Deletecar from "./deleteCar";
 
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
@@ -26,9 +26,8 @@ const getCars = async () => {
 
     return (
         <div className="flex bg-gray-700  h-screen">
-        <div className="flex-grow text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
-         
-        <div className=" bg-white">
+             
+        <div className=" w-screen px-8 py-2 bg-white">
 
             
         <div className="mb-2" /*2 QUANDO CRIAR A FUNÇÃO AddCar (bottun)*/>
@@ -47,7 +46,7 @@ const getCars = async () => {
                     <tr key={car.id}>
                         <td>{index + 1}</td>
                         <td>{car.name}</td>
-                        <td ></td>
+                        <td> <Deletecar car={car} /> </td>
                     </tr>
                     ))}
                 </tbody>
@@ -56,7 +55,7 @@ const getCars = async () => {
 
             </div>
 </div>
-</div>    )
+    )
     
 }
 

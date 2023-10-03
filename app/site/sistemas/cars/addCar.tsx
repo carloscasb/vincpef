@@ -30,7 +30,7 @@ const [isOpen, setIsOpen] = useState(false);
 const handleModalV = () => {
     setIsOpen(!isOpen)
 }
-/*  VAMOS CRIAR A CONSTANTE DE GRAVAÇÃO (handleSubmit) E COLOCAR(SUBMETER) NA ACÃO DO FORM  (Importar SyntheticEvent  )
+/*  VAMOS CRIAR A CONSTANTE DE GRAVAÇÃO (handleSubmitC) E COLOCAR(SUBMETER) NA ACÃO DO FORM  (Importar SyntheticEvent  )
     <form onSubmit={handleSubmitC}>
 */
 const handleSubmitC = async (event: SyntheticEvent) => {
