@@ -38,7 +38,7 @@ export default function Suporte() {
             Usuários
           </button></div>
 
-          <div> <button type="button" onClick={() => router.push('/site/nivels')} className="btn btn-primary
+          <div> <button type="button" onClick={() => router.push('/site/suportes/nivels')} className="btn btn-primary
   w-40 ">
             Niveis
           </button></div>
